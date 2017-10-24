@@ -1,0 +1,10 @@
+{
+	"Notifications" : {
+		"Email" : {
+			"Username" : "your_gmail_address",
+			"Key2key" : "encrypted key"
+		}
+	}
+}
+
+

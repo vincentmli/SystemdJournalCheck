@@ -1,0 +1,22 @@
+{
+	"Notifications" : {
+		"Email" : {
+			"Host" : "smtp.gmail.com",
+			"Port" : 587,
+			"Username" : "your_gmail_address",
+			"Password" : "encrypted password"
+		}
+	},
+	"Journald" : {
+		"Sleep" : 1,
+		"Match" : [
+			"_SYSTEMD_UNIT=snort.service",
+			"_SYSTEMD_UNIT=monit.service"
+		],
+		"TriggerWords" : [
+			"Priority: 1",
+			"Priority: 2",
+			"cpu usage"
+		]
+	}
+}

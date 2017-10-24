@@ -1,0 +1,10 @@
+[Unit]
+Description=Notify on Event
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/notify -f /etc/journalcheck/from.json -t /etc/journalcheck/to.json -k /etc/journalcheck/key.json
+ExecStop=/bin/kill -s SIGINT $MAINPID
+
+[Install]
+WantedBy=multi-user.target

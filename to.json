@@ -1,0 +1,9 @@
+{
+	"Notifications" : {
+		"Email" : {
+			"To" : [
+				"your_email_address"
+			]
+		}
+	}
+}

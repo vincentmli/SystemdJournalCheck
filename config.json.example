@@ -1,0 +1,22 @@
+{
+	"Notifications" : {
+		"Email" : {
+			"Host" : "smtp.gmail.com",
+			"Port" : 587,
+			"Username" : "vincent.mc.li@gmail.com",
+			"Password" : "blabla",
+			"To" : [
+				"vincent.mc.li@gmail.com"
+			]
+		}
+	},
+	"Journald" : {
+		"Sleep" : 1,
+		"Match" : [
+			"_SYSTEMD_UNIT=snort.service"
+		],
+		"TriggerWords" : [
+			"Priority 1"
+		]
+	}
+}

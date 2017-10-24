@@ -1,0 +1,23 @@
+{
+	"Notifications" : {
+		"Email" : {
+			"Host" : "127.0.0.1",
+			"Port" : 25,
+			"Username" : "notify@example.example.co.uk",
+			"Password" : "\\xdc(\\x85\\v\\x03\\xd2_\\xdbg\\xa4\\xdfJ\\x9f\\xecQl/Ch\\x95\\x90\\x05Iy\\u007fWm\\xbf\\x9c&\\x1a$",
+			"To" : [
+				"example@example.com"
+			]
+		}
+	},
+	"Journald" : {
+		"Sleep" : 1,
+		"Match" : [
+			"_SYSTEMD_UNIT=sshd.service"
+		],
+		"TriggerWords" : [
+			"Accepted publickey",
+			"Accepted password"
+		]
+	}
+}

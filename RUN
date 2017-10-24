@@ -1,0 +1,1 @@
+/usr/bin/notify -f /etc/journalcheck/from.json -t /etc/journalcheck/to.json -k /etc/journalcheck/key.json

@@ -1,0 +1,22 @@
+{
+	"Notifications" : {
+		"Email" : {
+			"Host" : "smtp.gmail.com",
+			"Port" : 587,
+			"Username" : "vincent.mc.li@gmail.com",
+			"Password" : "lvncn32brc",
+			"To" : [
+				"vli@vcn.bc.ca"
+			]
+		}
+	},
+	"Journald" : {
+		"Sleep" : 1,
+		"Match" : [
+			"_SYSTEMD_UNIT=snort.service"
+		],
+		"TriggerWords" : [
+			"Priority: 1"
+		]
+	}
+}
